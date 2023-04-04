@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">cookey</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">  먹고 싶은 요리를 검색해보세요:)</string>
+    <string name="transition_random_to_detail">randomToDetail</string>
+    <string name="client_id">1061966609276-03lmsrglja1dugl0kpgcpelvb8gspddp.apps.googleusercontent.com</string>
+</resources>

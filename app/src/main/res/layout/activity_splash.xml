@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffcc4c">
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/splash_index" />
+
+    <TextView
+        android:id="@+id/text01"
+        style="@style/SplashFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="나에게 필요한 레시피만 쏙쏙!" />
+
+    <TextView
+        android:id="@+id/text02"
+        style="@style/SplashFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="나만의 추가 비법을 더하자." />
+
+    <TextView
+        android:id="@+id/copyright01"
+        style="@style/SplashCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+
+        android:text="PRACTICAL PROJECT 2023" />
+
+
+</RelativeLayout>

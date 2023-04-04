@@ -1,0 +1,149 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    // id 'kotlin-android-extensions'
+}
+
+android {
+    namespace 'com.googleplay.cookey'
+    compileSdk 33
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.googleplay.cookey"
+        minSdk 23
+        targetSdk 33
+        versionCode 2
+        versionName "2.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    viewBinding {
+        enabled true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //material
+    implementation 'com.google.android.material:material:1.2.0'
+
+    //okhttp
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+
+    //retrofit2
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+
+    //RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    //ViewPager2
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+
+    //SwipeRefreshLayout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //SpannedGridLayoutManager
+    implementation 'io.github.joeiot:spannedgridlayoutmanager:4.0.0'
+    //implementation 'com.arasthel:spannedgridlayoutmanager:3.0.2'
+    //implementation 'com.github.chekhwastaken:spannedgridlayoutmanager:2.0.3'
+
+    //Circle Indicator
+    implementation 'me.relex:circleindicator:2.1.6'
+
+       //KakaoLogin
+//    implementation "com.kakao.sdk:v2-user:2.3.0" // 카카오 로그인
+//    implementation "com.kakao.sdk:v2-talk:2.3.0" // 친구, 메시지(카카오톡)
+//    implementation "com.kakao.sdk:v2-story:2.3.0" // 카카오스토리
+//    implementation "com.kakao.sdk:v2-link:2.3.0" // 메시지(카카오링크)
+//    implementation "com.kakao.sdk:v2-navi:2.3.0" // 카카오내비
+//
+      //GoogleLogin
+//    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    // 메인재료, 서브재료 해시태그 리스트
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    //implementation 'com.github.fssilva:tagview:1.4.0'
+    //implementation 'com.github.mahimrocky:TagView:1.0.3'
+    implementation 'com.github.tommykw:tagview:0.0.1'
+
+    //CardView, roundImageView
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //Gallery
+    implementation 'com.github.Shouheng88:matisse:1.3.1'
+
+    //SwipeDecorator
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.2'
+
+    //transparent
+    implementation 'com.github.laobie:StatusBarUtil:2aac14c8e8'
+
+    // FireBase
+    implementation 'com.google.firebase:firebase-bom:31.3.0'
+
+    // Google Analytics (오류 리포팅)
+    implementation 'com.google.android.gms:play-services-analytics:10.2.4'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+
+    //circleIndicator
+    //implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+
+    //coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0-Beta'
+
+    //테스트 디펜던시
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.0.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
+
+    //동영상 BG
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.5'
+}

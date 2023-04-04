@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_radius"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/bglogin"
+        app:fabCradleMargin="0dp"
+        app:fabCradleRoundedCornerRadius="0dp"
+        app:fabCradleVerticalOffset="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bnv_home"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            app:backgroundTint="@color/bglogin"
+            app:itemIconTint="@drawable/bottom_icon_color"
+            app:itemTextAppearanceActive="@style/FontCaption"
+            app:itemTextAppearanceInactive="@style/FontCaption"
+            app:itemTextColor="@drawable/bottom_icon_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/home_nav"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/logBtn"
+        android:scrollIndicators="top|left|bottom|start|none|right"
+        app:backgroundTint="@color/bglogin"
+        app:borderWidth="6dp"
+        app:elevation="0dp"
+        app:fabSize="normal"
+        app:iconSize="18dp"
+        app:layout_anchor="@+id/bottomAppBar"
+        app:layout_anchorGravity="bottom"
+        app:pressedTranslationZ="0dp"
+        app:rippleColor="@color/white"
+        app:srcCompat="@drawable/ic_plus"
+        app:tint="@color/bglogin"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

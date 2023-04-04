@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1061966609276",
+    "project_id": "k404-cookey",
+    "storage_bucket": "k404-cookey.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061966609276:android:c0782aedd7d87b3a9a42f9",
+        "android_client_info": {
+          "package_name": "com.googleplay.cookey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061966609276-3brdt7jgi286q5h8o9ehfkuit3a95umo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.googleplay.cookey",
+            "certificate_hash": "ed24db15354570601f5053fff0502cce5ed5f0fe"
+          }
+        },
+        {
+          "client_id": "1061966609276-03lmsrglja1dugl0kpgcpelvb8gspddp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoLZz_-5BJH934XUDZe9qt8KfzGIi3muU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061966609276-03lmsrglja1dugl0kpgcpelvb8gspddp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

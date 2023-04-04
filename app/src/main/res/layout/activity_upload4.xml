@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".navigation.upload.UploadActivity4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/iv_upload_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/bglogin"
+            android:src="@drawable/arrow_back_black_24dp"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_upload_cancel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:text="나만의 레시피 완성"
+            android:textSize="23sp"
+            android:textColor="@color/navtext"
+            android:fontFamily="@font/binggraebold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toTopOf="@id/iv_upload_cancel"/>
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_cook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="350dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="2dp"
+            android:background="@color/textLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_poster"/>
+
+        <TextView
+            android:id="@+id/tv_text12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="결과"
+            android:textColor="@color/navtext"
+            android:textSize="20sp"
+            android:fontFamily="@font/coree5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_poster" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_upload_preview_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_text12" />
+
+        <Button
+            android:id="@+id/btn_upload_recipe_prev2"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/bgBtn"
+            app:backgroundTint="@null"
+            android:text="레시피 수정"
+            android:textSize="20sp"
+            android:fontFamily="@font/coree5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_submit"
+            app:layout_constraintTop_toBottomOf="@id/rv_upload_preview_recipe" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/logBtn"
+            app:backgroundTint="@null"
+            android:text="자랑하기"
+            android:textSize="20sp"
+            android:fontFamily="@font/coree5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_upload_recipe_prev2"
+            app:layout_constraintTop_toBottomOf="@id/rv_upload_preview_recipe" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
